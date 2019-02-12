@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace SpecflowTests.AcceptanceTest
+namespace SpecflowTests.AcceptanceTest.Featurefile
 {
     using TechTalk.SpecFlow;
     
@@ -18,14 +18,14 @@ namespace SpecflowTests.AcceptanceTest
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.2.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class ProfileFeature
+    public partial class SkillsFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
         private Microsoft.VisualStudio.TestTools.UnitTesting.TestContext _testContext;
         
-#line 1 "Profile.feature"
+#line 1 "Skills.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -44,7 +44,7 @@ namespace SpecflowTests.AcceptanceTest
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Profile", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Skills", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
                     "f two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -60,9 +60,9 @@ namespace SpecflowTests.AcceptanceTest
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "Profile")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "Skills")))
             {
-                global::SpecflowTests.AcceptanceTest.ProfileFeature.FeatureSetup(null);
+                global::SpecflowTests.AcceptanceTest.Featurefile.SkillsFeature.FeatureSetup(null);
             }
         }
         
@@ -84,65 +84,63 @@ namespace SpecflowTests.AcceptanceTest
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user can able to addd availability")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Profile")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to add a skill")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Skills")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Availability")]
-        public virtual void CheckIfUserCanAbleToAdddAvailability()
+        public virtual void CheckIfUserCouldAbleToAddASkill()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user can able to addd availability", new string[] {
-                        "mytag",
-                        "Availability"});
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to add a skill", new string[] {
+                        "mytag"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
- testRunner.Given("Click Edit icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I clicked on the skills tab under Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
- testRunner.And("Select availability", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I add a new skill", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
- testRunner.Then("the availability should display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("that skill should be displayed on my listings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user can able to add hours")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Profile")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("hours")]
-        public virtual void CheckIfUserCanAbleToAddHours()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user could able to edit a skill")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Skills")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("edit")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("skill")]
+        public virtual void CheckIfUserCouldAbleToEditASkill()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user can able to add hours", new string[] {
-                        "hours"});
-#line 13
- this.ScenarioSetup(scenarioInfo);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user could able to edit a skill", new string[] {
+                        "edit",
+                        "skill"});
 #line 14
- testRunner.Given("Click Edit icon for hours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ this.ScenarioSetup(scenarioInfo);
 #line 15
- testRunner.And("Select hours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I clicked on the skill tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 16
- testRunner.Then("the hours should be display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("I edit a new skill", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 17
+ testRunner.Then("that skill should be dispayed on my listing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check if user can able to add earn target")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Profile")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Earn")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("target")]
-        public virtual void CheckIfUserCanAbleToAddEarnTarget()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("check if user is able to delete a skill")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Skills")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("delete")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("skill")]
+        public virtual void CheckIfUserIsAbleToDeleteASkill()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check if user can able to add earn target", new string[] {
-                        "Earn",
-                        "target"});
-#line 19
- this.ScenarioSetup(scenarioInfo);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("check if user is able to delete a skill", new string[] {
+                        "delete",
+                        "skill"});
 #line 20
- testRunner.Given("click Edit icon for Earn Target", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 21
- testRunner.And("select Earn Target", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.Given("I click on Delete button of a skill", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 22
- testRunner.Then("the earn target should be dispaly", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+  testRunner.Then("language is deleted is from the skill", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

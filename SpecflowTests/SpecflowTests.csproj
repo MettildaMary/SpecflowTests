@@ -89,29 +89,39 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AcceptanceTest\AddLanguage.cs" />
-    <Compile Include="AcceptanceTest\Profile.feature.cs">
+    <Compile Include="AcceptanceTest\Language.cs" />
+    <Compile Include="AcceptanceTest\Featurefile\Profile.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Profile.feature</DependentUpon>
     </Compile>
     <Compile Include="AcceptanceTest\ProfileSteps.cs" />
+    <Compile Include="AcceptanceTest\Featurefile\Skills.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Skills.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AcceptanceTest\SpecFlowFeature1.feature.cs">
+    <Compile Include="AcceptanceTest\Featurefile\SpecFlowFeature1.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SpecFlowFeature1.feature</DependentUpon>
     </Compile>
+    <Compile Include="AcceptanceTest\SkillsSteps.cs" />
     <Compile Include="Utils\Start.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AcceptanceTest\Profile.feature">
+    <None Include="AcceptanceTest\Featurefile\Profile.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Profile.feature.cs</LastGenOutput>
     </None>
+    <None Include="AcceptanceTest\Featurefile\Skills.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Skills.feature.cs</LastGenOutput>
+    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="AcceptanceTest\SpecFlowFeature1.feature">
+    <None Include="AcceptanceTest\Featurefile\SpecFlowFeature1.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SpecFlowFeature1.feature.cs</LastGenOutput>
     </None>
